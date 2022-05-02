@@ -1,0 +1,20 @@
+@import "../../../sass/mixins";
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  margin: 28px 0 28px 0;
+
+  .title {
+    @include text(32px, 1.3em, #000000);
+    margin-bottom: 29px;
+  }
+
+  .list {
+    height: 100%;
+    min-height: 545px;
+  }
+}

@@ -1,0 +1,11 @@
+@mixin flex($justifyContent, $alignItems) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin text($fontSize, $lineHeight, $color) {
+  font-size: $fontSize;
+  line-height:$lineHeight;
+  color: $color;
+}

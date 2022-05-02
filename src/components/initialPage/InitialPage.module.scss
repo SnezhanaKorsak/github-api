@@ -1,0 +1,30 @@
+@import "../../sass/mixins";
+
+.container {
+  @include flex(center, center);
+  height: calc(100vh - 72px);
+
+  .mainContent {
+    width: 210px;
+    height: 196px;
+    @include flex(space-between, center);
+    flex-direction: column;
+
+    .iconSearch {
+      @include flex(center, center);
+      width: 110px;
+      height: 110px;
+
+      & svg {
+        width: 64.17px;
+        height: 64.17px;
+        color: #808080;
+      }
+    }
+
+    .text {
+      @include text(22px, 31px, #808080);
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../sass/mixins";
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  color: #808080;
+}
+
+.description {
+  @include text(16px, 24px, #000000);
+  display: inline-block;
+}

@@ -1,0 +1,56 @@
+@import "../../sass/mixins";
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 72px;
+  background-color: #0064EB;
+
+  .githubIcon {
+    margin: 0 20px 0 40px;
+
+    @media screen and (max-width: 320px) {
+      margin: 0 20px 0 20px;
+    }
+  }
+
+  .searchInput {
+    position: relative;
+
+    .iconSearch {
+      position: absolute;
+      top: 8px;
+      left: 14px;
+      @include flex(center, center);
+      width: 24px;
+      height: 24px;
+
+      & svg {
+        width: 14px;
+        height: 14px;
+        color: #808080;
+      }
+    }
+
+    & input {
+      @include text(14px, 17px, #000000);
+      font-family: 'Inter', sans-serif;
+      width: 500px;
+      height: 40px;
+      padding-left: 44px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      letter-spacing: normal;
+
+      @media screen and (max-width: 320px) {
+        width: 220px;
+      }
+
+      &::placeholder {
+        color: #808080;
+      }
+    }
+  }
+}

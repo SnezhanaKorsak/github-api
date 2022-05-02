@@ -1,0 +1,62 @@
+@import "../../sass/mixins";
+@import "../../common/styles/styles.module";
+
+.container {
+  width: 100%;
+  height: 100%;
+  @include flex(space-between, center);
+  flex-direction: column;
+
+  .avatar img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 124px;
+
+    .name {
+      display: block;
+      @include text(26px, 34px, #000000);
+      font-weight: 600;
+    }
+
+    .nickname a{
+      display: block;
+      @include text(18px, 22px, #0064EB);
+      font-weight: 400;
+      margin-top: 12px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .followersDescription {
+      @include flex(space-between, center);
+      width: 100%;
+      height: 24px;
+
+      .followers {
+        display: flex;
+        justify-content: space-between;
+        width: 147px;
+
+        @extend .icon;
+        @extend .description;
+      }
+
+      .following {
+        display: flex;
+        justify-content: space-between;
+        width: 129px;
+
+        @extend .icon;
+        @extend .description;
+      }
+    }
+  }
+}

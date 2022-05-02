@@ -1,0 +1,60 @@
+@import "../../../sass/mixins";
+
+.repositories {
+  width: 100%;
+  @include flex(center, center);
+
+  .container {
+    width: 243px;
+    height: 165px;
+    @include flex(space-between, center);
+    flex-direction: column;
+
+
+    .iconContainer {
+      @include flex(center, center);
+      width: 110px;
+      height: 110px;
+
+      .icon {
+        position: relative;
+        display: inline-block;
+        width: 76px;
+        height: 62px;
+        border: 9px solid #808080;
+        border-radius: 15px;
+        color: #808080;
+
+        &::after {
+          position: absolute;
+          top: 40%;
+          left: 24%;
+          content: '';
+          width: 30.5px;
+          height: 8px;
+          transform: rotate(45deg);
+          background-color: #808080;
+          border-radius: 4px;
+        }
+
+        &::before {
+          position: absolute;
+          top: 40%;
+          left: 24%;
+          content: '';
+          width: 30.5px;
+          height: 8px;
+          transform: rotate(135deg);
+          background-color: #808080;
+          border-radius: 4px;
+        }
+      }
+    }
+
+    .description {
+      @include text(22px, 31px, #808080);
+    }
+
+  }
+}
+

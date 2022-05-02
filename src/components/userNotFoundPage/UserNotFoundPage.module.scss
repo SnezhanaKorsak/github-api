@@ -1,0 +1,71 @@
+@import "../../sass/mixins";
+
+.container {
+  @include flex(center, center);
+  height: calc(100vh - 72px);
+
+  .mainContent {
+    width: 156px;
+    height: 165px;
+    @include flex(space-between, center);
+    flex-direction: column;
+
+    .userIcon {
+      @include flex(center, center);
+      width: 110px;
+      height: 110px;
+
+      .union {
+        @include flex(center, center);
+        flex-direction: column;
+        width: 65px;
+        height: 75px;
+
+        .ellipseTop {
+          width: 37px;
+          height: 37px;
+          border: 9px solid #808080;
+          border-radius: 50%;
+        }
+
+        .ellipseBody {
+          position: relative;
+          width: 65px;
+          height: 37px;
+          margin-top: 1px;
+          border-radius: 65px 65px 0 0;
+          border-top: 9px solid #808080;
+          border-left: 9px solid #808080;
+          border-right: 9px solid #808080;
+
+          &::before {
+            position: absolute;
+            bottom: -5px;
+            left: -9px;
+            content: '';
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: #808080;
+          }
+          &::after {
+            position: absolute;
+            bottom: -5px;
+            right: -9px;
+            content: '';
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: #808080;
+          }
+        }
+      }
+
+    }
+
+    .text {
+      @include text(22px, 31px, #808080);
+      text-align: center;
+    }
+  }
+}

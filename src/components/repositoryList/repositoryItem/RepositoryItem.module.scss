@@ -1,0 +1,27 @@
+@import "../../../sass/mixins";
+
+
+.container {
+  @include flex(space-between, flex-start);
+  flex-direction: column;
+  width: 100%;
+  height: 112px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  padding: 24px 32px 24px 32px;
+
+
+  .title {
+    @include text(24px, 29px, #0064EB );
+    text-decoration: none;
+    margin-bottom: 8px;
+  }
+
+  .description {
+    @include text(16px, 19px, #000000 );
+    height: 19px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
