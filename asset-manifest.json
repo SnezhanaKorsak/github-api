@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/github-api/static/css/main.924d61b0.css",
+    "main.js": "/github-api/static/js/main.40c0f808.js",
+    "static/js/787.24382433.chunk.js": "/github-api/static/js/787.24382433.chunk.js",
+    "static/media/spinning-circles.svg": "/github-api/static/media/spinning-circles.24fca0d37ebb26c59d1b4da75855bf33.svg",
+    "static/media/icons-github.svg": "/github-api/static/media/icons-github.60c8f679d788ef27026ec29297c966aa.svg",
+    "static/media/group.svg": "/github-api/static/media/group.96d5cf35f20318f6937da37c8ba1c20b.svg",
+    "index.html": "/github-api/index.html",
+    "main.924d61b0.css.map": "/github-api/static/css/main.924d61b0.css.map",
+    "main.40c0f808.js.map": "/github-api/static/js/main.40c0f808.js.map",
+    "787.24382433.chunk.js.map": "/github-api/static/js/787.24382433.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.924d61b0.css",
+    "static/js/main.40c0f808.js"
+  ]
+}
